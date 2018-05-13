@@ -4,25 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartActivity">
+    tools:context=".StartActivity"
+    android:background="@color/colorPrimary">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Welcome To MyChatApp"
-        android:textSize="24sp"/>
+        android:text="@string/welcome_to_mychatapp"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"/>
 
     <Button
         android:id="@+id/start_reg_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create A New Account"
+        android:text="@string/create_a_new_account"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="172dp"/>
 
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="185dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
+        android:background="@color/colorAccent"
+        android:text="@string/login" />
 
 
 </RelativeLayout>
